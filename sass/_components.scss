@@ -1,6 +1,8 @@
+//////////////////////////////////////////////////
+///////////**Header**
 .logo{
   height: 3.25rem;
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 
 .search {
@@ -52,24 +54,84 @@
 }
 
 .user-nav{
-  &__icon-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  & > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%;
+  }
+  & > *:hover{
+    background-color: var(--color-Grey-light-2);
+  }
 
+  &__icon-box{
+      display: flex;
+      align-items: center;
+      position: relative;
   }
   &__icon{
     height: 2.25rem;
     width: 2.25rem;
+    fill: var(--color-Grey-dark-2);
   }
   &__notification{
-
+      font-size: .8rem;
+      height: 1.75rem;
+      width:  1.75rem;
+      border-radius: 50%;
+      background-color: var(--color-primary);
+      color: #fff;
+      text-align: center;
+      padding-top: .3rem;
+      position: absolute;
+      top: .9rem;
+      right: 1.3rem;
   }
   &__user{
-
+      display: flex;
+      align-items: center;
   }
   &__user-photo{
       height: 3.75rem;
       border-radius: 50%;
-  }
-  &__user-name{
-
+      margin-right: 1rem;
   }
 }
+//////////////////////////////////////////////////
+///////////**Header End**
+
+//////////////////////////////////////////////////
+///////////**Side Bar**
+.side-nav{
+  font-size: 1.4rem;
+  margin-top: 3.5rem;
+   &__item{
+
+   }
+
+   &__link:link,
+   &__link:visited {
+      color: var(--color-Grey-light-1);
+      text-transform: uppercase;
+      display: block;
+      padding: 1.5rem 3rem;
+   }
+
+   &__icon{
+      width: 1.75rem;
+      height: 1.75rem;
+   }
+}
+
+
+.legal{
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2.5rem;
+  color: var(--color-Grey-dark-4);
+}
+//////////////////////////////////////////////////
+///////////**Side Bar End**

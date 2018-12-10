@@ -5,7 +5,6 @@
     box-shadow: var(--shadow-dark);
     min-height: 50rem;
 }
-
 .header{
   font-size: 1.4rem;
   height: 7rem;
@@ -23,9 +22,13 @@
 .sidebar{
     background-color: var(--color-Grey-dark-1);
     flex: 18%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .hotel-view{
   background-color: #fff;
   flex: 82%;
+  height: 80rem;
 }
